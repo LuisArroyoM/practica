@@ -1,0 +1,85 @@
+       <html>
+        <head>
+            <title>Contacto</title>
+        </head>
+ <script src="js.js"></script> 
+<style>
+ 
+
+img{
+ position: relative;
+display: inline-block;
+width:40%;
+height:40%;
+
+}
+
+fieldset {
+	border:1px solid black;
+	border-radius:8px;
+	
+	display: inline-block;
+	relative;
+}
+
+.avatar {
+  vertical-align: middle;
+  width: 40px;
+  height: 35px;
+  border-radius: 50%;
+}
+.undc {
+  vertical-align: middle;
+  width: 150px;
+  height: auto;
+ 
+}
+input[type=text] {
+  border: none;
+  border-bottom: 2px solid black;
+}
+
+
+</style>
+ 
+
+        <body bgcolor="#DCDCDC">
+<FONT FACE="small fonts">
+
+<center>
+<fieldset style=" background-color:white;">
+ <img src="undc.png" alt="Undc" class="undc"> 
+ <img src="avatar.png" alt="Avatar" class="avatar" align="right"> 
+ 
+<br></br> 
+
+
+                 <fieldset >
+
+                     <legend>Datos Personales</legend>
+
+                    <p>Nombre: <input type="text" id="nombre" name="nombre" class="nombrecomplet" onblur="validar();" size="30"></p> 
+                    <p>Apellido: <input type="text" id="apellido" name="nombre" class="apellidocomplete" onblur="validarapellido();" size="30"></p>
+              
+       
+                    
+                     <p>Correo: <input type="text" name="correo" id="correo" name="correo" class="correocomplet" onblur="validaremail();"size="30"></p>
+                     <p>Codigo: <input type="text" name="codigo" id="codigo" name="codigo" class="codigocomplet" onblur="validarcodigo();" size="30"></p>
+
+</fieldset>
+<br></br>                  
+ <fieldset >  
+	 <legend>Comentarios</legend>                
+  <textarea style=" width:100%;
+  height: auto;" id="txtComent" name="txtComent" cols="100" row="150"></textarea>
+  </fieldset>
+<br></br>                 
+
+<br></br>
+                <input type="reset" />
+                
+            </form>
+</fieldset>
+</center>
+ </body>
+ </html>
